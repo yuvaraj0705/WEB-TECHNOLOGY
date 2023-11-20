@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modify Booking Details</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Modify Booking Details</h2>
+
+        <form id="modify-booking-form">
+            <label for="booking-id">Select Booking:</label>
+            <select id="booking-id" name="booking-id" required>
+                <option value="booking1">Booking 1</option>
+                <option value="booking2">Booking 2</option>
+                <!-- Add more options based on existing bookings -->
+            </select>
+
+            <label for="new-check-in-date">New Check-in Date:</label>
+            <input type="date" id="new-check-in-date" name="new-check-in-date" required>
+
+            <label for="new-check-out-date">New Check-out Date:</label>
+            <input type="date" id="new-check-out-date" name="new-check-out-date" required>
+
+            <label for="new-room-type">New Room Type:</label>
+            <select id="new-room-type" name="new-room-type" required>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <label for="new-guests">New Number of Guests:</label>
+            <input type="number" id="new-guests" name="new-guests" min="1" required>
+
+            <button type="button" onclick="submitBookingModification()">Modify Booking</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

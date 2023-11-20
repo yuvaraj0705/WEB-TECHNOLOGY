@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel Booking System</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Our Hotel Booking System</h2>
+
+        <div id="user-registration">
+            <h3>User Registration</h3>
+            <form>
+                <button type="button" onclick="registerUser()">Register</a></button>
+            </form>
+        </div>
+
+        <div id="user-profile">
+            <h3>User Profile</h3>
+            <button type="button" onclick="modifyUserProfile()">Modify Profile</button>
+        </div>
+
+        <div id="room-booking">
+            <h3>Room Booking</h3>
+            <form>
+                <button type="button" onclick="bookRoom()">Book Room</button>
+            </form>
+        </div>
+
+        <div id="booking-history">
+            <h3>Booking History</h3>
+        </div>
+
+        <div id="change-cancel-booking">
+            <h3>Change/Cancel Booking</h3>
+            <form>
+                <button type="button" onclick="changeBooking()">Change Booking</button>
+                <button type="button" onclick="cancelBooking()">Cancel Booking</button>
+            </form>
+        </div>
+
+        <div id="room-availability">
+            <h3>Room Availability</h3>
+            <form>
+                <button type="button" onclick="checkRoomAvailability()">Check Availability</button>
+            </form>
+        </div>
+
+        <div id="admin-actions">
+            <h3>Administrator Actions</h3>
+            <form>
+                <button type="button" onclick="modifyRoomDetails()">Modify Room Details</button>
+                <button type="button" onclick="modifyBookingDetails()">Modify Booking Details</button>
+                <button type="button" onclick="cancelBookingByAdmin()">Cancel Booking (Admin)</button>
+                <button type="button" onclick="modifyStaticPages()">Modify Static Pages</button>
+            </form>
+        </div>
+
+        <div id="static-pages">
+            <h3>Static Pages</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
