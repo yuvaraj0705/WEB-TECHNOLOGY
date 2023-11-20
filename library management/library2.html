@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library Management System</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Library Management System</h2>
+
+        <div id="add-book-form">
+            <h3>Add Book</h3>
+            <form>
+                <label for="book-title">Title:</label>
+                <input type="text" id="book-title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" required>
+
+                <button type="button" onclick="addBook()">Add Book</button>
+            </form>
+        </div>
+
+        <div id="update-delete-form">
+            <h3>Update/Delete Book</h3>
+            <form>
+                <label for="book-id">Book ID:</label>
+                <input type="text" id="book-id" required>
+
+                <button type="button" onclick="updateBook()">Update Book</button>
+                <button type="button" onclick="deleteBook()">Delete Book</button>
+            </form>
+        </div>
+
+       
+        <div id="issue-book-form">
+            <h3>Issue Book for Student</h3>
+            <form>
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" required>
+
+                <label for="issue-book-id">Book ID:</label>
+                <input type="text" id="issue-book-id" required>
+
+                <button type="button" onclick="issueBook()">Issue Book</button>
+            </form>
+        </div>
+
+     
+        <div id="return-book-form">
+            <h3>Return Book Status</h3>
+            <form>
+                <label for="return-book-id">Book ID:</label>
+                <input type="text" id="return-book-id" required>
+
+                <button type="button" onclick="returnBook()">Return Book</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
