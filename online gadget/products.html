@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Gadget Store</title>
     <style>
-  
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -41,6 +41,11 @@
             padding: 1em;
             margin: 1em;
             text-align: center;
+            cursor: pointer;
+        }
+
+        .product-details {
+            display: none;
         }
 
         footer {
@@ -59,23 +64,37 @@
 
 <nav>
     <a href="#">Home</a>
-    <a href="#">Products</a>
+    <a href="#" id="products-link">Products</a>
     <a href="#">Contact</a>
 </nav>
 
-<section>
-    <div class="product">
+<section id="products-section">
+    <div class="product" onclick="showProductDetails('smartphone')">
         <h2>Smartphone</h2>
         <p>High-end smartphone with the latest features.</p>
         <p>Price: $999</p>
-        <button>Add to Cart</button>
     </div>
 
-    <div class="product">
+    <div class="product" onclick="showProductDetails('laptop')">
         <h2>Laptop</h2>
         <p>Powerful laptop for work and entertainment.</p>
         <p>Price: $1499</p>
-        <button>Add to Cart</button>
+    </div>
+
+</section>
+
+
+<section id="product-details-section" class="product-details">
+    <div id="smartphone-details" class="product-details">
+        <h2>Smartphone Details</h2>
+        <p>Details about the high-end smartphone.</p>
+        <p>Additional features and specifications.</p>
+    </div>
+
+    <div id="laptop-details" class="product-details">
+        <h2>Laptop Details</h2>
+        <p>Details about the powerful laptop.</p>
+        <p>Additional features and specifications.</p>
     </div>
 
 </section>
@@ -83,6 +102,19 @@
 <footer>
     <p>&copy; 2023 Online Gadget Store</p>
 </footer>
+
+<script>
+    function showProductDetails(product) {
+ 
+        var productDetails = document.getElementsByClassName('product-details');
+        for (var i = 0; i < productDetails.length; i++) {
+            productDetails[i].style.display = 'none';
+        }
+
+   
+        document.getElementById(product + '-details').style.display = 'block';
+    }
+</script>
 
 </body>
 </html>
