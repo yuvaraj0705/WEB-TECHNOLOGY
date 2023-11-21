@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment System</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Hospital Appointment System</h1>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="#make-appointment">Make Appointment</a>
+    <a href="#view-appointments">View Appointments</a>
+</nav>
+
+<!-- Main Content - Make Appointment Form -->
+<section id="make-appointment">
+    <h2>Make Appointment</h2>
+    <form action="process-appointment.php" method="post">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+
+        <label for="doctor">Select Doctor:</label>
+        <select id="doctor" name="doctor" required>
+            <option value="Dr. Smith">Dr. Smith</option>
+            <option value="Dr. Johnson">Dr. Johnson</option>
+            <!-- Add more doctors as needed -->
+
+        </select>
+
+        <label for="appointmentDate">Select Date:</label>
+        <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+        <button type="submit">Submit Appointment</button>
+    </form>
+</section>
+
+<!-- Main Content - View Appointments -->
+<section id="view-appointments">
+    <h2>View Appointments</h2>
+    <!-- Add logic to display appointments from the database -->
+    <p>No appointments found.</p>
+</section>
+
+</body>
+</html>
