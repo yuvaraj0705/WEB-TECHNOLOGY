@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Insurance Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button {
+            padding: 13px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 200px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Online Insurance Management</h1>
+
+    <form id="insuranceForm">
+        <label for="policyHolder">Policy Holder Name:</label>
+        <input type="text" id="policyHolder" name="policyHolder" required>
+
+        <label for="insuranceType">Insurance Type:</label>
+        <select id="insuranceType" name="insuranceType" required>
+            <option value="life">Life Insurance</option>
+            <option value="auto">Auto Insurance</option>
+            <option value="health">Health Insurance</option>
+            <!-- Add more insurance types as needed -->
+        </select>
+
+        <label for="policyAmount">Policy Amount:</label>
+        <input type="number" id="policyAmount" name="policyAmount" required>
+
+        <label for="startDate">Policy Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required>
+
+        <label for="endDate">Policy End Date:</label>
+        <input type="date" id="endDate" name="endDate" required>
+        <button type="submit"><a href="insurance1.html">Submit Insurance Application</a></p></button>
+        <p class="message">Not registered? <a href="insurance1.html">Create an account</a></p>
+    </form>
+
+</body>
+</html>
